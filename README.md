@@ -27,7 +27,7 @@ Your photos never leave your device. Nothing is uploaded or stored: the strip is
 
 - Plain HTML, CSS and JavaScript, no frameworks and no backend
 - Camera via `getUserMedia`, photo processing on `<canvas>`
-- Shutter and paper sounds synthesised with the Web Audio API
+- Shutter and paper sounds synthesised with the Web Audio API, printing sound from Freesound
 - Hosted on GitHub Pages
 
 ## Credits
@@ -35,3 +35,5 @@ Your photos never leave your device. Nothing is uploaded or stored: the strip is
 Design and concept: [Aleksandra Novikova](https://aleksandra-novikova.com)
 
 Fonts: [Manrope](https://github.com/sharanda/manrope) and [Open Sans](https://github.com/googlefonts/opensans), both under the [SIL Open Font License 1.1](fonts/OFL.txt).
+
+Printing sound: [Old video camera](https://freesound.org/people/JoMungus/sounds/718650/) by JoMungus, [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
