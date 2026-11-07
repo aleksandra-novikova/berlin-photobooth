@@ -64,6 +64,7 @@
   .slot img { position: absolute; left: 32px; width: 93px; top: -480px; }
   .slot img.out { top: -186px; transition: top 5s cubic-bezier(.3,.1,.4,1); }
 
+  .ready { left: 420px; top: 478px; width: 600px; text-align: center; color: #fff; font-size: 68px; font-weight: 500; line-height: 1; }
   .count {
     left: 626px; top: 455px; width: 200px; text-align: center;
     color: #fff; font-size: 90px; font-weight: 500; line-height: 1;
@@ -150,8 +151,8 @@
 <div class="dim" id="dim" hidden></div>
 
 <div class="stage top">
-  <div class="abs count" id="count" aria-live="assertive"></div>
-  <p class="abs msg" id="msg" hidden></p>
+  <div class="abs ready" id="ready" hidden>Get ready</div>
+  <div class="abs count" id="count" aria-live="assertive"></div>  <p class="abs msg" id="msg" hidden></p>
   <div id="result" hidden>
     <img class="abs result-strip" id="resultStrip" alt="Dein Fotostreifen mit vier Bildern">
     <button class="btn dl" id="download" type="button">download</button>
@@ -341,6 +342,10 @@ async function session() {
   video.srcObject = stream; await video.play();
 
   $('dim').hidden = false;
+  // Warning screen before the first countdown
+  $('ready').hidden = false;
+  await wait(2000);
+  $('ready').hidden = true;
   const frames = [];
   for (let shot = 0; shot < 4; shot++) {
     for (const n of [3, 2, 1]) { $('count').textContent = n; await wait(1000); }
