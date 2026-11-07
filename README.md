@@ -2,7 +2,7 @@
 
 A digital photobooth inspired by the vintage Photoautomat booths on the streets of Berlin.
 
-**[Try it → aleksandra-novikova.github.io/berlin-photobooth](https://aleksandra-novikova.github.io/berlin-photobooth/)**
+**[Try it → berlinvintagephotobooth.com](https://berlinvintagephotobooth.com/)**
 
 ![Berlin Vintage Photobooth](og-image.png)
 
